@@ -2,6 +2,7 @@
 import React from "react";
 import PasswordInput from "./PasswordInput";
 import SubmitButton from "./SubmitButton";
+import "../App.css";
 
 function App() {
   return (

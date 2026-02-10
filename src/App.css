@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f0f2f5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the login form */
+.login-container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 90%;
   text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Title */
+.login-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+  font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input fields */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.login-container input:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.2);
 }
 
-.card {
-  padding: 2em;
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6c63ff, #a29bfe);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.login-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.3);
+}
+
+/* Forgot password / links */
+.login-container a {
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #6c63ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
