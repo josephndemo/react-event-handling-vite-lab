@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import '../App.css'
-import PasswordInput from './PasswordInput'
-import SubmitButton from './SubmitButton'
+// App.jsx
+import React from "react";
+import PasswordInput from "./PasswordInput";
+import SubmitButton from "./SubmitButton";
 
 function App() {
-
   return (
-    <div>
-      <PasswordInput/>
-      <SubmitButton/>
+    <div style={{ padding: "20px" }}>
+      <h1>Password Security Lab</h1>
+      <PasswordInput />
+      <SubmitButton />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
